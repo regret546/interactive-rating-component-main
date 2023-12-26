@@ -90,4 +90,42 @@ h6 {
 
 body {
   font-family: var(--ff--primary);
-} /*# sourceMappingURL=style.css.map */
+  background-color: var(--clr--very-dark-blue);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 350px;
+  color: var(--clr--white);
+  background-color: var(--clr--dark-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.container .card {
+  display: grid;
+  gap: 1rem;
+}
+.container .card__star_image {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  background-color: var(--clr--light-grey);
+}
+.container .card__star_image img {
+  width: 20px;
+  height: 20px;
+}
+.container .card__ratenumber {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

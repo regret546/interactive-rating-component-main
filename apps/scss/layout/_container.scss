@@ -1,0 +1,29 @@
+.container {
+  max-width: 350px;
+  color: var(--clr--white);
+  background-color: var(--clr--dark-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  .card {
+    display: grid;
+    gap: 1rem;
+
+    &__star_image {
+      display: grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      background-color: var(--clr--light-grey);
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__ratenumber {
+      display: flex;
+    }
+  }
+}
