@@ -1,5 +1,7 @@
+@use "../layout/util/" as u;
+
 .container {
-  max-width: 350px;
+  max-width: 400px;
   color: var(--clr--white);
   background-color: var(--clr--dark-blue);
   padding: 2rem;
@@ -10,12 +12,7 @@
     gap: 1rem;
 
     &__star_image {
-      display: grid;
-      place-items: center;
-      width: 35px;
-      height: 35px;
-      border-radius: 35px;
-      background-color: var(--clr--light-grey);
+      @include u.circle-border;
       img {
         width: 20px;
         height: 20px;
@@ -24,6 +21,24 @@
 
     &__ratenumber {
       display: flex;
+      justify-content: space-between;
+      li {
+        @include u.circle-border;
+        a {
+          text-decoration: none;
+          color: var(--clr--light-grey);
+          font-weight: var(--fw--very-bold);
+        }
+      }
+    }
+    button {
+      padding: 0.5rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 1.5rem;
+      font-weight: var(--fw--bold);
+      background-color: var(--clr--orange);
+      color: var(--clr--white);
     }
   }
 }
