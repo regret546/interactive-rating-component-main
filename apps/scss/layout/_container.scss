@@ -23,21 +23,22 @@
       display: flex;
       justify-content: space-between;
       li {
-        cursor: pointer;
+        button {
+          cursor: pointer;
+          @include u.circle-border;
+          font-weight: var(--fw--very-bold);
+          background-color: none;
+          color: var(--clr--medium-grey);
 
-        @include u.circle-border;
-        &:hover {
-          transition: 0.5s;
-          background-color: var(--clr--orange);
-
-          a {
+          &:hover {
+            background-color: var(--clr--orange);
             color: var(--clr--white);
           }
-        }
-        a {
-          text-decoration: none;
-          color: var(--clr--light-grey);
-          font-weight: var(--fw--very-bold);
+
+          &:focus {
+            background-color: var(--clr--light-grey);
+            color: var(--clr--white);
+          }
         }
       }
     }

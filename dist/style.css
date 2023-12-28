@@ -130,7 +130,7 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
-.container .card__ratenumber li {
+.container .card__ratenumber li button {
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -138,18 +138,17 @@ ul li {
   height: 50px;
   border-radius: 50px;
   background-color: var(--clr--very-dark-blue);
+  font-weight: var(--fw--very-bold);
+  background-color: none;
+  color: var(--clr--medium-grey);
 }
-.container .card__ratenumber li:hover {
-  transition: 0.5s;
+.container .card__ratenumber li button:hover {
   background-color: var(--clr--orange);
-}
-.container .card__ratenumber li:hover a {
   color: var(--clr--white);
 }
-.container .card__ratenumber li a {
-  text-decoration: none;
-  color: var(--clr--light-grey);
-  font-weight: var(--fw--very-bold);
+.container .card__ratenumber li button:focus {
+  background-color: var(--clr--light-grey);
+  color: var(--clr--white);
 }
 .container .card button {
   padding: 0.5rem;
