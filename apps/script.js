@@ -18,3 +18,4 @@ ratingBtn.addEventListener("click", function (e) {
   card1.style.display = "none";
   card2.style.display = "grid";
   ratingSpan.textContent = rating;
+});
