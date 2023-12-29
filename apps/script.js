@@ -1,5 +1,8 @@
 const ratingBtn = document.querySelector("#ratingBtn");
 const selectedRating = document.querySelectorAll("#ratingList button");
+const ratingSpan = document.querySelector("#selected_rating");
+const card1 = document.querySelector("#card1");
+const card2 = document.querySelector("#card2");
 
 let rating = 0;
 
@@ -12,5 +15,7 @@ for (let rate of selectedRating) {
 
 ratingBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  alert("You selected" + " " + rating);
+  card1.style.display = "none";
+  card2.style.display = "grid";
+  ratingSpan.textContent = rating;
 });

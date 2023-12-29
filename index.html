@@ -34,7 +34,7 @@
   <body>
     <main class="container">
       <!-- Rating state start -->
-      <section class="card">
+      <section class="card" id="card1">
         <div class="card__star_image">
           <img src="images/icon-star.svg" alt="star icon" />
         </div>
@@ -62,7 +62,23 @@
         </ul>
         <button id="ratingBtn">SUBMIT</button>
       </section>
-      <!-- Rating state end -->
+
+      <section class="card2" id="card2">
+        <div class="card2__header">
+          <img src="images/illustration-thank-you.svg" alt="" />
+          <p>
+            You selected <span id="selected_rating">4</span> out of
+            <span>5</span>
+          </p>
+        </div>
+        <div class="card2__thankyou">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch.
+          </p>
+        </div>
+      </section>
     </main>
 
     <div class="attribution">

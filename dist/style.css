@@ -104,15 +104,21 @@ ul li {
 }
 
 .container {
-  max-width: 400px;
   color: var(--clr--white);
   background-color: var(--clr--dark-blue);
   padding: 2rem;
+  margin: 1rem;
   border-radius: 1rem;
+}
+.container .card,
+.container .card2 {
+  max-width: 350px;
+  max-height: 450px;
+  display: grid;
+  gap: 1rem;
 }
 .container .card {
   display: grid;
-  gap: 1rem;
 }
 .container .card__star_image {
   display: grid;
@@ -151,6 +157,7 @@ ul li {
   color: var(--clr--white);
 }
 .container .card button {
+  cursor: pointer;
   padding: 0.5rem;
   margin-top: 1rem;
   border: none;
@@ -163,4 +170,25 @@ ul li {
   transition: 0.5s;
   background-color: var(--clr--white);
   color: var(--clr--orange);
+}
+.container .card2 {
+  display: none;
+  justify-items: center;
+  text-align: center;
+}
+.container .card2 div {
+  display: grid;
+  gap: 1rem;
+}
+.container .card2__header p {
+  color: var(--clr--orange);
+  background-color: var(--clr--very-dark-blue);
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+}
+.container .card2__thankyou {
+  margin-top: 1rem;
+}
+.container .card2__thankyou p {
+  color: var(--clr--light-grey);
 }/*# sourceMappingURL=style.css.map */

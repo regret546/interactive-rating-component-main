@@ -6,3 +6,8 @@
   border-radius: 50px;
   background-color: var(--clr--very-dark-blue);
 }
+
+@mixin grid-gap1rem {
+  display: grid;
+  gap: 1rem;
+}
