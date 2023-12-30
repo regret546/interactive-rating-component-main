@@ -113,7 +113,7 @@ ul li {
 .container .card,
 .container .card2 {
   max-width: 350px;
-  max-height: 450px;
+  min-height: 350px;
   display: grid;
   gap: 1rem;
 }
@@ -137,6 +137,7 @@ ul li {
   justify-content: space-between;
 }
 .container .card__ratenumber li button {
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -153,6 +154,7 @@ ul li {
   color: var(--clr--white);
 }
 .container .card__ratenumber li button:focus {
+  outline: 0;
   background-color: var(--clr--light-grey);
   color: var(--clr--white);
 }
@@ -181,10 +183,11 @@ ul li {
   gap: 1rem;
 }
 .container .card2__header p {
+  margin: auto 0;
   color: var(--clr--orange);
   background-color: var(--clr--very-dark-blue);
-  padding: 0.3rem 1rem;
-  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1.5rem;
 }
 .container .card2__thankyou {
   margin-top: 1rem;

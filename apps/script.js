@@ -15,7 +15,11 @@ for (let rate of selectedRating) {
 
 ratingBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  card1.style.display = "none";
-  card2.style.display = "grid";
-  ratingSpan.textContent = rating;
+  if (rating !== 0) {
+    card1.style.display = "none";
+    card2.style.display = "grid";
+    ratingSpan.textContent = rating;
+  } else {
+    alert("Please Select a Rating");
+  }
 });
